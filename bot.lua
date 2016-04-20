@@ -263,7 +263,7 @@ function bot_run()
 	if not ban then
 		ban = load_data('ban.db')
 	end
-	local bot_info = "Username = @"..bot.username.."\nName = "..bot.first_name.."\nID = "..bot.id.." \n[jon the cruel channel](https://telegram.me/joinchat/Cz0GaD5yj9_VLaNXOOg3ag)"
+	local bot_info = "Username = @"..bot.username.."\nName = "..bot.first_name.."\nID = "..bot.id.." \n[jon the cruel channel](https://telegram.me/ara_parsa)"
 
 	print(bot_info)
 	for k,v in pairs(add.id) do
@@ -363,7 +363,7 @@ user = bot.username
 else
 user = msg.from.username
 end
-local text = "سلام ["..msg.from.first_name.."](www.telegram.me/"..user..")\n\n[ربات خود را بسازید](http://opizo.com/3AGyRT)"
+local text = " سلام به پیام رسان من خوش امدی ["..msg.from.first_name.."](www.telegram.me/"..user..")\n\n[ربات خود را بسازید](https://telegram.me/ara_parsa)"
 sendMessage(msg.chat.id,text.."\n"..start,true,false,true)
 elseif msg.text == "/start" and is_add(msg) then
  	print(#add.id)
@@ -373,7 +373,7 @@ user = bot.username
 else
 user = msg.from.username
 end
-local text = "سلام ["..msg.from.first_name.."](www.telegram.me/"..user..")\n\n[ربات خود را بسازید](http://opizo.com/3AGyRT)"
+local text = "سلام به پیام رسان من خوش امدی ["..msg.from.first_name.."](www.telegram.me/"..user..")\n\n[ربات خود را بسازید](https://telegram.me/ara_parsa)"
 sendMessage(msg.chat.id,text.."\n"..start,true,false,true)
 elseif is_admin(msg) and msg.text == "/users" then
  	local r = tostring(#add.id)
