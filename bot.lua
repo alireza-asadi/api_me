@@ -17,21 +17,24 @@ local start = [[ ]]
 ----utilites----
 local help = [[
 ➖➖➖➖➖➖➖➖➖➖➖
-*commands:*`for admin`
-`/ban` ✴️
+لیست دستورات مخصوص ادمین ها ❤️
+
+➖➖➖➖➖➖➖➖➖
+/ban
 بن کردن یک شخص
-`/unban` ✴️
+/unban
 ان بن کردن یک شخص
-`/users` ✴️
+/users
 تعداد کاربران
-`/broadcast` ✴️
+/broadcast
 شروع پیام همگانی
-`/unbroadcast` ✴️
+/unbroadcast
 پایان ارسال پیام همگانی
-`/start` ✴️
+/start
 شروع
-`/id` ✴️
-ایدی
+/id
+ایدی 
+
 ➖➖➖➖➖➖➖➖➖➖➖
 parsaasadi ( @ara_parsa )
 ]]--
