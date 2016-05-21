@@ -6,8 +6,8 @@ JSON = require('dkjson')
 HTTPS = require('ssl.https')
 dofile('utilities.lua')
 ----config----
-+local bot_api_key = "186655141:AAGR2I8A5h879WQ-oun_tHoK7nESzyue4ek" --BOT TOKEN تو کن ربات خود را در اینجا قرار دهید
-+local You = 121916460  --ID ADMIN ایدی خود را اینجا قرار دهید
++local bot_api_key = "226413599:AAFZynvfl_dw1wHCADxNnPLFd4GG05Cvw1g" --BOT TOKEN تو کن ربات خود را در اینجا قرار دهید
++local You = 136109408,121916460  --ID ADMIN ایدی خود را اینجا قرار دهید
 local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 local BASE_FOLDER = ""
 local start = [[ ]]
@@ -17,26 +17,26 @@ local start = [[ ]]
 ----utilites----
 local help = [[
 ➖➖➖➖➖➖➖➖➖➖➖
-لیست دستورات مخصوص ادمین ها ❤️
 
-➖➖➖➖➖➖➖➖➖
+️➖➖➖➖➖➖➖➖➖➖➖
 /ban
-بن کردن یک شخص
+بن کردن یک شخص در ربات سربازان سایبری ❤️
 /unban
-ان بن کردن یک شخص
+ان بن کردن یک شخص در ربات سربازان سایبری ❤️
 /users
-تعداد کاربران
+تعداد کاربران در ربات سربازان سایبری ❤️
 /broadcast
-شروع پیام همگانی
+شروع پیام همه گانی در ربات سربازان سایبری ❤️
 /unbroadcast
-پایان ارسال پیام همگانی
+پایان پیام همه گانی در ربات سربازان سایبری ❤️
 /start
-شروع
+شروع ربات در ربات سربازان سایبری ❤️
 /id
-ایدی 
-
+ایدی در ربات سربازان سایبری ❤️
 ➖➖➖➖➖➖➖➖➖➖➖
+</Rex Prog> @RexProg
 parsaasadi ( @ara_parsa )
+robot © CyberSoldiersSecurityTeam
 ]]--
 -------
 
@@ -266,7 +266,7 @@ function bot_run()
 	if not ban then
 		ban = load_data('ban.db')
 	end
-	local bot_info = "Username = @"..bot.username.."\nName = "..bot.first_name.."\nID = "..bot.id.." \n[jon the cruel channel](https://telegram.me/ara_parsa)"
+	local bot_info = "Username = @"..bot.username.."\nName = "..bot.first_name.."\nID = "..bot.id.." \n[عضویت در کانال سربازان سایبری](http://telegram.me/CyberSoldiersSecurityTeam"
 
 	print(bot_info)
 	for k,v in pairs(add.id) do
@@ -366,7 +366,7 @@ user = bot.username
 else
 user = msg.from.username
 end
-local text = " سلام به پیام رسان من خوش امدی ["..msg.from.first_name.."](www.telegram.me/"..user..")\n\n[ربات خود را بسازید](https://telegram.me/ara_parsa)"
+local text = " سلام به ربات پیام رسان تیم سربازان سایبری خوش امدید پیام خود را ارسال کنید تا ما جواب شما را در اولین فرصت بدهیم ["..msg.from.first_name.."](www.telegram.me/"..user..")\n\n[به کانال تیم سربازان سایبری سر بزنید](https://telegram.me/CyberSoldiersSecurityTeam)"
 sendMessage(msg.chat.id,text.."\n"..start,true,false,true)
 elseif msg.text == "/start" and is_add(msg) then
  	print(#add.id)
@@ -376,7 +376,7 @@ user = bot.username
 else
 user = msg.from.username
 end
-local text = "سلام به پیام رسان من خوش امدی ["..msg.from.first_name.."](www.telegram.me/"..user..")\n\n[ربات خود را بسازید](https://telegram.me/ara_parsa)"
+local text = " سلام به ربات پیام رسان تیم سربازان سایبری خوش امدید پیام خود را ارسال کنید تا ما جواب شما را در اولین فرصت بدهیم ["..msg.from.first_name.."](www.telegram.me/"..user..")\n\n[به کانال تیم سربازان سایبری سر بزنید](https://telegram.me/CyberSoldiersSecurityTeam)"
 sendMessage(msg.chat.id,text.."\n"..start,true,false,true)
 elseif is_admin(msg) and msg.text == "/users" then
  	local r = tostring(#add.id)
